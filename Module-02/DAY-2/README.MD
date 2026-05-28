@@ -1,39 +1,48 @@
-# Ex.No:2(B) ACCESS MODIFIERS
+# Ex.No:2(A)  STATIC METHOD
 
 ## AIM:
-To develop a Java Program to display the addition number using private modifiers only.
+To create a java program for calculate cube of a number using static method.
 
 ## ALGORITHM :
-1.	Start the program.
-2.	Define a class named `addition`
-3.	Declare two private integer variables, `num1` and `num2`
-4.	Define a private method `add()` that:
-a)	Returns the sum of `num1` and `num2`
-5.	Define a public method `display(int n1, int n2)` that:
-a)	Assigns `n1` to `num1` and `n2` to `num2`
-b)	Calls the `add()` method and prints the result using `System.out.println`
-6.	Define the `main` method as static
-a)	Create an instance of the `addition` class called `ad`
-b)	Call the `display(8, 9)` method on the `ad` object
-7.	End
-
-
+1.  Start : Begin the process of calculating the cube of a number.
+2.	Declare a variable to store input : Declare an integer variable n to hold the number whose cube will be calculated.
+3.	Create a Scanner object : Create a Scanner object (sc) to read the input from the user.
+4.	Read input from the user : Prompt the user to input an integer value. The input value is stored in the variable n.
+5.	Call the cubecal function : Call the function cubecal(n) which computes the cube of the number by performing n * n * n.
+6.	Store the result : Store the result of the cubecal function in an integer variable result.
+7.	Output the result :
+8.	Print the cube of the number using System.out.println("Cube is: " + result);.
+9.	End the program.
 
 
 
 
 ## PROGRAM:
  ```
-/*
-Program to implement a access modifiers using Java
-Developed by: 
-RegisterNumber:  
-*/
+Program to implement a Static method using Java
+Developed by    : KISHOR K R
+RegisterNumber  : 212224110032
 ```
 
 ## Sourcecode.java:
 
-
+```java
+import java.util.*;  
+public class CalculateCube  
+{  
+    static void cube()  
+    {  
+        Scanner sc = new Scanner(System.in);
+        int x= sc.nextInt();  
+        int y=x*x*x;
+        System.out.println("Cube is: "+y);    
+    }  
+    public static void main(String args[])  
+    {  
+        cube();    
+    }  
+}  
+```
 
 
 
@@ -41,9 +50,9 @@ RegisterNumber:
 
 ## OUTPUT:
 
+![JAVA2 1](https://github.com/user-attachments/assets/406fc1ba-0d17-49a9-9f12-88d501ac8eb8)
 
 
 ## RESULT:
-Thus the java program to display the addition number using private modifiers only was executed successfully.
-
+Thus the java program for calculate cube of a number using static method has been executed successfully.
 
